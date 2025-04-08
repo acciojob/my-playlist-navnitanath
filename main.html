@@ -1,16 +1,112 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Playlist</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
 
+    /* Centered headings */
+    h1, h2 {
+      text-align: center;
+    }
+
+    /* Playlist style */
+    ul {
+      padding-left: 0;
+      list-style-type: none;
+      text-align: center;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    a {
+      text-decoration-line: none;
+      color: #007bff;
+      font-size: 18px;
+    }
+
+    a:hover {
+      text-decoration-line: underline;
+    }
+
+    /* Media player container style */
+    .media-player {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .audio-player, .video-player {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling for the video player */
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Styling for the audio player */
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Heading for Playlist -->
+  <h1>My Playlist</h1>
+
+  <!-- Now Playing Heading -->
+  <h2>Now Playing...</h2>
+
+  <!-- MP3 songs Heading -->
+  <h2>MP3 Songs</h2>
+
+  <!-- Playlist of Songs -->
+  <ul>
+    <li><a href="song1.mp3" target="_blank">Song 1 - Artist</a></li>
+    <li><a href="song2.mp3" target="_blank">Song 2 - Artist</a></li>
+    <li><a href="song3.mp3" target="_blank">Song 3 - Artist</a></li>
+    <li><a href="song4.mp3" target="_blank">Song 4 - Artist</a></li>
+    <li><a href="song5.mp3" target="_blank">Song 5 - Artist</a></li>
+  </ul>
+
+  <!-- Video Player -->
+  <div class="media-player video-player">
+    <h3>Video Player</h3>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Audio Player -->
+  <div class="media-player audio-player">
+    <h3>Audio Player</h3>
+    <audio controls>
+      <source src="song.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 
 </body>
-
 </html>
